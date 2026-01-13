@@ -1,5 +1,7 @@
 # CSP451-CheckPoint1-Sophia
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Simple project for CSP451 — CheckPoint 1 by Sophia.  
 This repository contains the assignment files and instructions for running and evaluating the checkpoint submission.
 
