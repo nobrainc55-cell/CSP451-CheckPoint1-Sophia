@@ -81,3 +81,9 @@ Guidelines:
 ## License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
+
+## Update Log
+- Added footer section
+- Added footer styling
+- Added console message for footer
+
