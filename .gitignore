@@ -32,3 +32,6 @@ out/
 *.zip
 *.tar.gz
 *.tmp
+
+# Added for assignment commit
+*.log
