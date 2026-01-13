@@ -1,1 +1,34 @@
 
+# .gitignore for CSP451-CheckPoint1-Sophia
+# Resource examples: https://github.com/github/gitignore
+
+# 1) Operating system files
+.DS_Store
+Thumbs.db
+
+# 2) Editor / IDE folders
+.vscode/
+.idea/
+
+# 3) Log files
+*.log
+
+# 4) Dependency / package folders
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+
+# 5) Build / output directories
+dist/
+build/
+out/
+
+# 6) Environment and secret files
+.env
+*.local
+
+# 7) Optional: archives and OS temporary files
+*.zip
+*.tar.gz
+*.tmp
