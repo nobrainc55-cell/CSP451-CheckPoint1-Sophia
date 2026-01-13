@@ -1,1 +1,151 @@
+/* styles.css for CSP451-CheckPoint1-Sophia
+   - Basic reset / normalization
+   - Body, header, main, footer styling
+   - Typography
+   - Uses Lobster font and #FEFDDO as text color
+   Note: background color set to #BEDD9F (based on prior message)
+*/
+
+/* Import Lobster from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+  --bg: #BEDD9F;
+  --content-bg: #ffffff;
+  --text: #FEFDDO; /* updated font color */
+  --muted: #586069;
+  --accent: #6b8e23; /* olive-ish accent */
+  --max-width: 900px;
+  --radius: 10px;
+}
+
+/* Reset / normalize */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body styling - use Lobster as requested */
+body {
+  font-family: 'Lobster', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page layout */
+header {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+header h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+header .subtitle {
+  margin: 0;
+  color: rgba(254,253,208,0.85); /* slightly muted version of --text for subtitle */
+  font-size: 0.95rem;
+}
+
+/* Main content area */
+main {
+  flex: 1 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  background: var(--content-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.04);
+  color: #222; /* Ensure content text inside container remains dark for readability */
+}
+
+/* Sections inside main */
+section + section {
+  margin-top: 1.25rem;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--accent);
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  margin: 0 0 0.875rem 0;
+  color: #222;
+  font-size: 1rem;
+}
+
+/* Lists inside quick-start */
+ol, ul {
+  margin: 0 0 0.875rem 1.25rem;
+  padding: 0;
+}
+
+code {
+  background: rgba(27,31,35,0.05);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 0.95em;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: rgba(254,253,208,0.9); /* use the light text color for footer on background */
+  font-size: 0.9rem;
+  background: transparent;
+  border-top: 1px solid rgba(0,0,0,0.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
+
+/* Added hover effect for assignment commit */
+footer p {
+  font-size: 0.9rem;
+  color: #666;
+}
 
