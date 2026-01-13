@@ -63,3 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Added console message for assignment commit
+console.log("Footer loaded successfully");
+
